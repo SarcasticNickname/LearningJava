@@ -1,4 +1,4 @@
-package OOPEmployee;
+package oopEmployee;
 
 import java.util.Objects;
 
@@ -8,7 +8,7 @@ public class Manager extends Employee {
 	private double bonus;
 	
 	//Конструктор с явным обращением к конструктору класса-родителя.
-	//Constructor with explicit use of class-parent's contructor.
+	//Constructor with explicit call of class-parent's contructor.
 	public Manager(String name, double salary, int year, int month, int day) {
 		super(name,salary,year,month,day);
 		bonus = 0;
