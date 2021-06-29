@@ -1,4 +1,4 @@
-package OOPEmployee;
+package oopEmployee;
 
 public class EmployeeTest {
 
