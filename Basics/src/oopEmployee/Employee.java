@@ -3,7 +3,7 @@ package oopEmployee;
 import java.time.*;
 import java.util.Objects;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 	//Поля
 	//Fields
 	private String name;
@@ -36,6 +36,14 @@ public class Employee {
 	public void raiseSalary(double byPercent) {
 		double raise = salary * byPercent/100;
 		salary += raise;
+	}
+	
+	/**
+	 * Реализация интерфейса comparable<Employee>. Используется сравнение по зарплате.
+	 * Implementation of comparable<Employee> interface. Comparing 2 employees using salary.
+	 */
+	public int compareTo(Employee other) {
+		return Double.compare(this.salary,other.salary);
 	}
 	
 	/**
