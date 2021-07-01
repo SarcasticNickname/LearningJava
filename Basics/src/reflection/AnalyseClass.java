@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
  */
 @SuppressWarnings("rawtypes")
 public class AnalyseClass {
-	public static void analyse(String className) throws ReflectiveOperationException {
+	public static void analyze(String className) throws ReflectiveOperationException {
 		var in = new Scanner(System.in);
 		Class cls;
 		
