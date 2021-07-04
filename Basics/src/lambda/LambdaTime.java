@@ -7,6 +7,7 @@ import java.util.*;
 public class LambdaTime {
 
 	public static void main(String[] args) {
+		// timer = new Timer(1000, System.out::println);
 		var timer = new Timer(1000, event -> 
 			System.out.println("The time is: " + new Date()));
 		timer.start();
